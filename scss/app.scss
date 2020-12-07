@@ -1,0 +1,131 @@
+@import "utils/variables";
+@import "vendor/vendors";
+@import "partials/header";
+@import "partials/footer";
+
+html {
+  font-family: Arial, sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+.button {
+  width: 100%;
+  max-width: 250px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin: 20px auto;
+  font-size: 1.125em;
+  color: white;
+  cursor: pointer;
+  background-color: #be2c38;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.button:focus {
+  border-color: rgb(59, 59, 59);
+}
+.button:hover {
+  background-color: #ab2832;
+}
+
+form {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+input {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  margin-top: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 2px solid #be2c38;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus,
+input:active,
+input:visited {
+  border: 2px solid #3b3b3b;
+  border-radius: 2px;
+}
+input[type="checkbox"] {
+  margin-top: 20px;
+}
+
+.gift__wrapper > h2 {
+  margin: 20px 0 0 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  color: rgb(59, 59, 59);
+  text-align: center;
+}
+
+.gift__wrapper {
+  -ms-flex-pack: center;
+  -ms-flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #fafafb;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-direction: normal;
+}
+
+/* CUSTOM "CHECKED" ICON */
+.cboxB input:checked ~ label:before {
+  display: inline-block;
+  content: "";
+  background: #be2c38;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: 0;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+}
+
+/* CUSTOM SQUARE */
+.cboxB label:before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: -4px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgb(59, 59, 59);
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+}

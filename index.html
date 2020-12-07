@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Brasscheck</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <script src="dist/app.min.js"></script>
+    <link rel="stylesheet" href="dist/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="capture" class="overflow-hidden">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- <button onClick="window.docapture()">Click Me</button> -->
+    <!-- Add your site or application content here -->
+    <main>
+      <div class="">
+        <div class="gift__wrapper" style="text-align: left;">
+          <h2>Enter a delivery address</h2>
+
+          <form class="">
+            <input
+              id="deliveryEmailInput"
+              type="email"
+              name="properties[Delivery]"
+              placeholder="Email"
+            />
+
+            <div class="cboxB">
+              <input type="checkbox" id="giftCheckbox" name="giftCheckbox" />
+              <label for="giftCheckbox">This is a gift</label>
+            </div>
+          </form>
+          <button
+            class="button"
+            onclick="SendData()"
+            data-element="product.button"
+          >
+            Buy now
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
